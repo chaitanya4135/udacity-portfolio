@@ -1,0 +1,267 @@
+/* raju is the parent class of king and queen*/
+.raju {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  width: 90%;
+  border: 2pX solid #ddd;
+  padding: 1%;
+  margin: 1% auto;
+  box-shadow: 8px 10px 10px #000;
+}
+
+/* king is the child of the raju and logo is displaying in this div */
+.king {
+  width: 50%;
+  text-align: left;
+}
+
+/* queen is the child of the raju and name of project is displaying in this*/
+.queen {
+  font-family: 'pacifio', cursive;
+  text-decoration: #75ff00;
+  width: 50%;
+  text-align: right;
+  margin: 1% auto;
+}
+
+/* styles for h2 tag */
+h2 {
+  width: 90%;
+  margin: 1% auto;
+  font-family: 'pacifio', cursive;
+  text-align: center;
+}
+
+/* styles for h1 and paragraph tags */
+h1, p {
+  width: 90%;
+  font-family: 'pacifio', cursive;
+  margin: 1% auto;
+}
+
+/* styles for  images */
+img {
+  height: 100%;
+  width: 40%;
+}
+
+/*banner class styles*/
+.banner {
+  width: 90%;
+  color: #fbfbf5;
+  margin: 1% auto;
+  padding-top: 40px;
+}
+
+/* parent class of cards styles*/
+.cards {
+  width: 90%;
+  margin: 1% auto;
+  padding-top: 10px;
+  border: 2px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px #ddd;
+  font-family: 'pacifio', cursive;
+}
+
+/* birds is chil of the cards class and all birds classes are used for displaying card */
+.birds {
+  width: 20%;
+  margin: 1% auto;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 4px;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+/* photo is the class of the image tag */
+.photo {
+  width: 95%;
+  height: 50%;
+  padding-top: 10px;
+}
+
+/* this is for applying styles for banner image */
+.banner img {
+  width: 100%;
+  height: 600px;
+}
+
+/* styles for banner */
+.banner {
+  text-align: center;
+  height: 600px;
+  width: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* styles for buttons used in birds classes */
+.birds button {
+  width: 100%;
+  background-color: #dada1e;
+  padding: 1%;
+  text-align: center;
+}
+
+/* -animations for cards and photo
+   -birds is the child class of cards
+   -photo is the class name of the images*/
+.birds, .photo {
+  transition: all 1s ease;
+}
+
+.birds:hover {
+  transform: scale(0.8);
+  border: 1px solid #000;
+}
+
+.photo:hover {
+  transform: scale(0.8);
+}
+
+/* footer styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+  margin: 1% auto;
+}
+
+/*media query for mobile view*/
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+
+  /* styles for parent class in mobile view */
+  .raju {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border: 2pX solid #ddd;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  /* child class of raju*/
+  .king {
+    width: 90%;
+    margin: 1% auto;
+    text-align: center;
+  }
+
+  /* child  class of raju */
+  .queen {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* styles for banner class in mobile view */
+  .banner {
+    text-align: center;
+    height: 400px;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* styles for banner class image in mobile view */
+  .banner img {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* styles for cards class in mobile view
+  card is the parent class for birds*/
+  .cards {
+    width: 90%;
+    margin: 7% auto;
+    padding-top: 10px;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 8px 10px 10px #000;
+  }
+
+  /* common class name for all cards */
+  .birds {
+    width: 90%;
+    margin: 7% auto;
+    background-color: #bde2de;
+    color: #000;
+    text-align: center;
+    padding: 2%;
+  }
+
+  /* common class name for all images */
+  .photo {
+    width: 100%;
+  }
+
+  /* style for birds class button in mobile view */
+  .birds button {
+    background-color: #e0e17C;
+  }
+}
+
+/*media query for ipad*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* styles for parent class in ipad view */
+  .raju {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border: 2pX solid #ddd;
+    padding: 1%;
+    margin: 1% auto;
+  }
+
+  /* child class of raju*/
+  .king {
+    width: 45%;
+    margin: 1% auto;
+    text-align: center;
+  }
+
+  /* child class of raju */
+  .queen {
+    width: 45%;
+    text-align: center;
+  }
+
+  /* styles for cards class in ipad  view
+  card is the parent class for birds*/
+  .cards {
+    width: 90%;
+    margin: 1% auto;
+    padding-top: 10px;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 8px 10px 10px #000;
+  }
+
+  /* common class name for all cards */
+  .birds {
+    width: 45%;
+    margin: 1% auto;
+    text-align: center;
+    padding: 2%;
+  }
+
+  /* common class name for all images */
+  .photo {
+    width: 100%;
+    height: 50%;
+    margin: 1% auto;
+  }
+}
